@@ -15,8 +15,9 @@ describe('App: MyPizzaList', () => {
     expect(app).toBeTruthy();
   }));
 
-  it('should have as title \'my-pizza-list works!\'',
+ /* it('should have as title \'my-pizza-list works!\'',
       inject([MyPizzaListAppComponent], (app: MyPizzaListAppComponent) => {
     expect(app.title).toEqual('my-pizza-list works!');
   }));
+  */
 });

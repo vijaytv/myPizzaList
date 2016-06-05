@@ -9,25 +9,25 @@ import {
 import { ComponentFixture, TestComponentBuilder } from '@angular/compiler/testing';
 import { Component } from '@angular/core';
 import { By } from '@angular/platform-browser';
-import { PizzeriaComponent } from './pizzeria.component';
+import { SearchBoxComponent } from './search-box.component';
 
-describe('Component: Pizzeria', () => {
+describe('Component: SearchBox', () => {
   let builder: TestComponentBuilder;
 
-  beforeEachProviders(() => [PizzeriaComponent]);
+  beforeEachProviders(() => [SearchBoxComponent]);
   beforeEach(inject([TestComponentBuilder], function (tcb: TestComponentBuilder) {
     builder = tcb;
   }));
 
-  it('should inject the component', inject([PizzeriaComponent],
-      (component: PizzeriaComponent) => {
+  it('should inject the component', inject([SearchBoxComponent],
+      (component: SearchBoxComponent) => {
     expect(component).toBeTruthy();
   }));
 
   it('should create the component', inject([], () => {
-    return builder.createAsync(PizzeriaComponentTestController)
+    return builder.createAsync(SearchBoxComponentTestController)
       .then((fixture: ComponentFixture<any>) => {
-        let query = fixture.debugElement.query(By.directive(PizzeriaComponent));
+        let query = fixture.debugElement.query(By.directive(SearchBoxComponent));
         expect(query).toBeTruthy();
         expect(query.componentInstance).toBeTruthy();
       });
@@ -37,10 +37,10 @@ describe('Component: Pizzeria', () => {
 @Component({
   selector: 'test',
   template: `
-    <app-pizzeria></app-pizzeria>
+    <app-search-box></app-search-box>
   `,
-  directives: [PizzeriaComponent]
+  directives: [SearchBoxComponent]
 })
-class PizzeriaComponentTestController {
+class SearchBoxComponentTestController {
 }
 
