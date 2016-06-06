@@ -8,3 +8,4 @@
 4. Google Maps 
 5. CSS - Add styles, grid 
 6. Add icons for price 
+7. Integrate with Firebase
