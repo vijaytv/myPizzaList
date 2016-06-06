@@ -10,14 +10,18 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>Desc</th>
       <th>Style</th>
+      <th>Visited?</th>
       <th>Price</th>
     </tr>  
   </thead>
   <tbody>
     <tr *ngFor="let pizzeria of (pizzerias | search: term ) ">
-     <td>{{ pizzeria.name }}</td>
+     <td><a target="_blank" href="{{pizzeria.website}}">{{ pizzeria.name }}</a></td>
+     <td>{{ pizzeria.desc }}</td>
      <td>{{ pizzeria.style }}</td>
+     <td>{{ pizzeria.visited }}</td>
      <td>{{ pizzeria.price }}</td>
     </tr>
           
