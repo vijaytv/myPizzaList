@@ -2,7 +2,7 @@
 
 
 ## TODO
-1. Add Charts of places visited by neighborhood  (Add neighborhood to region)
+1. Add Charts of places visited by neighborhood  (Add neighborhood to data) 
 2. Add Routes
 3. Testing scripts
 4. Google Maps 
